@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crown Resto</title>
+    <meta name="description" content="Crown Resto">
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header class="navbar-container" id="navbar">
+      <div class="logo">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="36"
+          height="36"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M11.219 3.375 8 7.399 4.781 3.375A1.002 1.002 0 0 0 3 4v15c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2V4a1.002 1.002 0 0 0-1.781-.625L16 7.399l-3.219-4.024c-.381-.474-1.181-.474-1.562 0zM5 19v-2h14.001v2H5zm10.219-9.375c.381.475 1.182.475 1.563 0L19 6.851 19.001 15H5V6.851l2.219 2.774c.381.475 1.182.475 1.563 0L12 5.601l3.219 4.024z"
+          ></path>
+        </svg>
+      </div>
+      <div onclick="displayMenu()" class="hamburger">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="36"
+          height="36"
+          viewBox="0 0 24 24"
+        >
+          <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path>
+        </svg>
+      </div>
+      <nav class="nav-list" id="nav-list">
+        <ul>
+          <li><a href="#navbar">Beranda</a></li>
+          <li><a href="#about">Tentang Kami</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#contact">Kontak</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="hero-section" id="hero-section">
+      <h1>Crown Resto</h1>
+      <p>An Authentic Restaurant</p>
+    </div>
+    <main>
+      <div id="about">
+        <h1>Tentang Kami</h1>
+        <p>
+          Crown Resto adalah sebuah restoran yang didirikan dengan tujuan untuk
+          memberikan pengalaman kuliner yang istimewa bagi para pelanggannya.
+          Kami menawarkan berbagai hidangan lezat yang diolah dengan bahan-bahan
+          segar dan berkualitas tinggi.
+        </p>
+        <p>
+          Visi kami adalah menjadi restoran terdepan dalam menyediakan hidangan
+          lezat dan berkualitas tinggi dengan layanan yang ramah dan
+          profesional.
+        </p>
+        <p>Misi kami adalah:</p>
+        <ul>
+          <li>
+            <p>
+              Menyediakan hidangan lezat yang diolah dengan bahan-bahan segar
+              dan berkualitas tinggi.
+            </p>
+          </li>
+          <li>
+            <p>
+              Memberikan layanan yang ramah dan profesional kepada para
+              pelanggan.
+            </p>
+          </li>
+          <li>
+            <p>
+              Menciptakan suasana yang nyaman dan menyenangkan untuk menikmati
+              hidangan.
+            </p>
+          </li>
+        </ul>
+        <p>
+          Restoran kami memiliki suasana yang nyaman dan menyenangkan, dengan
+          dekorasi yang modern dan stylish. Kami juga memiliki area outdoor yang
+          cocok untuk bersantai sambil menikmati hidangan.
+        </p>
+        <p>
+          Crown Resto adalah tempat yang tepat untuk menikmati hidangan lezat
+          bersama keluarga, teman, atau kolega. Kami juga menyediakan layanan
+          catering untuk berbagai acara.
+        </p>
+      </div>
+      <hr />
+
+      <div id="menu">
+        <h1>Menu</h1>
+        <div class="menus">
+          <div class="menu">
+            <img
+              src="https://images.unsplash.com/photo-1644288232801-2b40ff99d54f"
+              alt="Sate Ayam"
+            />
+            <p>Sate Ayam</p>
+          </div>
+          <div class="menu">
+            <img src="assets/images/sop-buntut.jpg" alt="Sop Buntut" />
+            <p>Sop Buntut</p>
+          </div>
+          <div class="menu">
+            <img src="assets/images/rendang.jpg" alt="Rendang Sapi" />
+            <p>Rendang Sapi</p>
+          </div>
+          <div class="menu">
+            <img src="assets/images/gulai.jpg" alt="Gulai" />
+            <p>Gulai</p>
+          </div>
+        </div>
+      </div>
+      <hr />
+
+      <div class="contact" id="contact">
+        <h1>Hubungi Kami</h1>
+        <form>
+          <label for="nama">Nama:</label>
+          <input type="text" id="nama" name="nama" required />
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+          <label for="pesan">Pesan:</label>
+          <textarea
+            id="pesan"
+            name="pesan"
+            rows="5"
+            cols="30"
+            required
+          ></textarea>
+          <br />
+          <button type="submit">Kirim</button>
+        </form>
+      </div>
+    </main>
+    <footer>
+      <a>fzzzn. © 2024</a>
+    </footer>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
